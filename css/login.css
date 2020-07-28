@@ -1,7 +1,12 @@
+:root {
+    --lato-font-family: 'Lato', sans-serif;
+    --open_sans-font-family: 'Open Sans', sans-serif;
+}
+
 body {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: var(--lato-font-family)
     /* background: #34495e; */
 }
 
