@@ -1,0 +1,482 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    color: #898989;
+}
+
+.navigation {
+    /* border: 1px solid red; */
+    width: 100%;
+    position: fixed;
+    /* margin: 10px; */
+    z-index: 10;
+}
+
+nav {
+    position: sticky;
+    background: white;
+    /* height: 20vh; */
+    width: 100%;
+    font-family: sans-serif;
+    padding: 0 20px;
+    /* border: 1px solid blue; */
+}
+
+nav ul {
+    float: right;
+    padding-top: 25px
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+}
+
+a.active,
+a:hover,
+li:hover,
+header div.icons i {
+    color: #1b9bff;
+    transition: .5s;
+    transform: scale(1.2);
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: blue;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    padding-top: 20px;
+    display: none;
+    /* border: 4px solid red; */
+}
+
+#check {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #6799DB;
+    padding: 0 0 15px 0;
+    font-family: sans-serif;
+    /* height: 10vh; */
+}
+
+header div.info {
+    padding: 10px;
+    color: white;
+    /* border: 1px solid orange; */
+}
+
+header div.info p {
+    color: white;
+}
+
+header div.icons {
+    position: relative;
+    width: 400px;
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    /* padding: 10px 0 0 0; */
+    /* right: 100px; */
+    /* border: 1px solid orange; */
+}
+
+header div.icons i {
+    color: white;
+    font-size: large;
+    cursor: pointer;
+}
+
+main {
+    position: relative;
+    top: 191px;
+}
+
+
+/* slider styling */
+
+div.slideshow {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+div.slideshowItems {
+    float: left;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    /* animation: imageSlide 26s infinite; */
+}
+
+div.slideshowItems img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.slideshowItemsText {
+    max-width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(10, 10, 10, 0.8);
+    opacity: .7;
+    color: #fff;
+    padding: 20px;
+    left: 0;
+}
+
+div.slideshowItemsText h5 {
+    font-size: 5rem;
+    font-family: "relaway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 2.5rem;
+}
+
+div.slideshowItemsText p {
+    font-size: 1.6em;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+section {
+    max-width: 9600px;
+    height: 100vh;
+    display: flex;
+}
+
+section .main {
+    width: 70%;
+    height: 100vh;
+    background: red;
+}
+
+section .right {
+    width: 30%;
+    height: 100%;
+    background: yellow;
+}
+
+section .main {
+    background: rgb(236, 235, 235);
+    /* display: flex; */
+    padding: 20px 0px;
+}
+
+.main .thesubjects {
+    display: flex;
+}
+
+.subject {
+    padding: 30px;
+    margin: 15px;
+}
+
+.main h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #6799DB;
+}
+
+.midle {
+    max-width: 9600px;
+    height: 100vh;
+    background: rgb(246, 250, 250);
+    border: 2px solid transparent;
+}
+
+.Midcontainer {
+    width: 1100px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 100px 100px;
+}
+
+.images {
+    width: 350px;
+    height: 100px;
+    padding: 30px;
+}
+
+.images a {
+    text-decoration: none;
+}
+
+a>span {
+    width: 200px;
+    height: 30px;
+    padding: 10px 30px;
+    background: rgb(85, 124, 233);
+    color: #fff;
+    font-size: 1.2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: .35s ease;
+}
+
+a>span:hover {
+    background: rgb(23, 23, 24);
+    color: #fff;
+}
+
+div.elt {
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+.title {
+    text-transform: uppercase;
+    word-spacing: 20px;
+    padding: 10px;
+    color: rgb(90, 90, 90);
+}
+
+div.elt h3 {
+    font-size: 15px;
+    padding: 5px;
+}
+
+div.elt h4 {
+    color: rgb(90, 90, 90);
+    font-size: 25px;
+    padding: 5px;
+}
+
+div.elt img {
+    width: 100%;
+    height: 330px;
+}
+
+div.elt .someCours {
+    width: 100%;
+    display: flex;
+    flex: wrap column;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    background: rgb(255, 255, 255);
+    min-height: 500px;
+}
+
+div.elt .someCours .cours1,
+div.elt .someCours .cours2,
+div.elt .someCours .cours3,
+div.elt .someCours .cours4 {
+    max-width: 255px;
+    height: fit-content;
+    transition: all .35s ease;
+    background: rgb(235, 235, 235);
+    overflow: hidden;
+    border: 1px solid #ccf;
+}
+
+div.elt .someCours .cours1:hover,
+div.elt .someCours .cours2:hover,
+div.elt .someCours .cours3:hover,
+div.elt .someCours .cours4:hover {
+    border: 1px solid rgb(85, 124, 233);
+    background: rgb(84, 122, 226);
+    color: rgb(253, 252, 252);
+}
+
+div.elt .someCours .cours1 .staff-img {
+    width: 100%;
+    height: 200 !important;
+}
+
+div.elt .someCours .cours1 .staff-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+div.elt .someCours .cours1 .staff-info {
+    border: 1px solid red;
+}
+
+
+/* TEST */
+
+.test-container {
+    /* border: 1px solid red; */
+    width: 350p;
+    height: 400px;
+}
+
+.test-container .box {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: fit-content;
+    background: #eee;
+}
+
+.test-container .box .img {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.test-container .box .img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.test-container .info {
+    /* border: 1px solid #333; */
+    padding: 10px 20px;
+}
+
+.test-container .info h2 {
+    padding-bottom: 10px;
+    color: #000;
+}
+
+
+/* FOOTER SECTION */
+
+footer {
+    width: 100%;
+    background: #6799DB;
+}
+
+.main-content {
+    display: flex;
+    line-height: 20px;
+}
+
+.main-content .mainvalue {
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.mainvalue h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.mainvalue .cont {
+    margin: 20px 0 0 0;
+}
+
+.left .cont p {
+    text-align: justify;
+    color: rgb(26, 24, 24);
+}
+
+.social {
+    margin: 20px 0 0 0;
+}
+
+.social a {
+    padding: 0 2px;
+}
+
+.social a span {
+    height: 40px;
+    width: 40px;
+    background: #6799DB;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.social a span:hover {
+    background: #f12020;
+}
+
+.right .btn button {
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.5s;
+    outline: none;
+    border: none;
+}
+
+.right .btn button:hover {
+    background: #f12020;
+    color: white;
+}
+
+.right input[type="email"],
+.right textarea {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+@media (max-width: 937px) {
+    header {
+        display: block;
+    }
+}
+
+@media (max-width: 858px) {
+    #check:checked~ul {
+        left: 0;
+    }
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 350px;
+        background: white;
+        margin-top: 0;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        /* border: 1px solid red; */
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        color: #0082e6;
+    }
+    header {
+        display: block;
+    }
+}

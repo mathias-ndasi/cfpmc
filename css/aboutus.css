@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    position: relative;
+    top: 191px;
+    /* height: 100vh; */
+    border: 5px solid green;
+}
+
+.navigation {
+    /* border: 1px solid red; */
+    width: 100%;
+    position: fixed;
+    /* margin: 10px; */
+    z-index: 10;
+}
+
+nav {
+    position: sticky;
+    background: white;
+    /* height: 20vh; */
+    width: 100%;
+    font-family: sans-serif;
+    padding: 0 20px;
+    /* border: 1px solid blue; */
+}
+
+nav ul {
+    float: right;
+    padding-top: 25px
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+}
+
+a.active,
+a:hover,
+li:hover,
+header div.icons i {
+    color: #1b9bff;
+    transition: .5s;
+    transform: scale(1.2);
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: blue;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    padding-top: 20px;
+    display: none;
+    /* border: 4px solid red; */
+}
+
+#check {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #6799DB;
+    padding: 0 0 15px 0;
+    font-family: sans-serif;
+    /* height: 10vh; */
+}
+
+header div.info {
+    padding: 10px;
+    color: white;
+    /* border: 1px solid orange; */
+}
+
+header div.info p {
+    color: white;
+}
+
+header div.icons {
+    position: relative;
+    width: 400px;
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    /* padding: 10px 0 0 0; */
+    /* right: 100px; */
+    /* border: 1px solid orange; */
+}
+
+header div.icons i {
+    color: white;
+    font-size: large;
+    cursor: pointer;
+}
+
+
+/* footer styling */
+
+footer {
+    width: 100%;
+    background: #6799DB;
+    position: relative;
+    bottom: 0;
+}
+
+.main-content {
+    display: flex;
+    line-height: 20px;
+}
+
+.main-content .mainvalue {
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.mainvalue h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.mainvalue .cont {
+    margin: 20px 0 0 0;
+}
+
+.left .cont p {
+    text-align: justify;
+    color: rgb(26, 24, 24);
+}
+
+.social {
+    margin: 20px 0 0 0;
+}
+
+.social a {
+    padding: 0 2px;
+}
+
+.social a span {
+    height: 40px;
+    width: 40px;
+    background: #6799DB;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.social a span:hover {
+    background: #f12020;
+}
+
+.right .btn button {
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.5s;
+    outline: none;
+    border: none;
+}
+
+.right .btn button:hover {
+    background: #f12020;
+    color: white;
+}
+
+.right input[type="email"],
+.right textarea {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.row {
+    justify-content: space-between;
+    /* align-items: center; */
+    display: flex;
+    width: 50%;
+    text-align: center;
+}
+
+#aboutus h2 {
+    margin-bottom: 25px;
+}
+
+.img-wrap {
+    width: 100%;
+}
+
+.img-wrap img {
+    width: 100%;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px blue;
+}
+
+@media (max-width: 539px) {
+    header div.icons i {
+        font-size: small;
+    }
+    main {
+        /* position: relative; */
+        top: 350px;
+    }
+    div.courscontent .firstcontent,
+    div.courscontent .secondcontent {
+        display: block;
+        width: 100%;
+        transition: all 1s;
+    }
+    div.courscontent .courses {
+        width: 100%;
+        /* border: 4px solid #0000; */
+    }
+    div.courscontent .courses img {
+        height: 70%;
+        transition: 1s;
+    }
+    div.courscontent {
+        width: 100%;
+        display: block
+    }
+    p#welcome {
+        transition: all 1s;
+        font-size: large;
+    }
+    .main-content {
+        display: block;
+    }
+    footer {
+        display: block;
+    }
+}
+
+@media (max-width: 937px) {
+    header {
+        display: block;
+    }
+    main {
+        position: relative;
+        top: 231px;
+        transition: all 1s;
+    }
+    p#welcome {
+        transition: all 1s;
+        font-size: xx-large;
+    }
+}
+
+@media (max-width: 858px) {
+    #check:checked~ul {
+        left: 0;
+    }
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 350px;
+        background: white;
+        margin-top: 0;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        /* border: 1px solid red; */
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        color: #0082e6;
+    }
+    header {
+        display: block;
+    }
+}
