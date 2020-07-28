@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 main {
@@ -24,7 +25,7 @@ nav {
     /* height: 20vh; */
     width: 100%;
     font-family: sans-serif;
-    padding: 0 20px;
+    padding: 0 10px;
     /* border: 1px solid blue; */
 }
 
@@ -78,7 +79,7 @@ header {
     justify-content: space-between;
     width: 100%;
     background: #6799DB;
-    padding: 0 0 15px 0;
+    /* padding: 0 0 15px 0; */
     font-family: sans-serif;
     /* height: 10vh; */
 }
@@ -116,18 +117,18 @@ header div.icons i {
 .wrapper {
     max-width: 500px;
     width: 100%;
-    /* background:#fff; */
+    background: rgb(189, 212, 255);
     margin: 20px auto;
     padding: 30px;
-    /* border: 4px solid orange; */
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0, 125);
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
 }
 
 .wrapper .title {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 25px;
-    color: #fe3807;
+    color: #0734fe;
     text-transform: uppercase;
     text-align: center;
 }
@@ -161,7 +162,7 @@ header div.icons i {
 .wrapper .form .input_field .textarea {
     width: 100%;
     outline: none;
-    border: 1px solid #d5dbd9;
+    border: 1px solid #b7bdbb;
     font-size: 15px;
     padding: 8px 10px;
     border-radius: 3px;
@@ -170,7 +171,7 @@ header div.icons i {
 
 .wrapper .form .input_field .textarea {
     resize: none;
-    height: 125px;
+    height: 100px;
 }
 
 .wrapper .form .input_field .custom_select {

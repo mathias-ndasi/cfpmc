@@ -99,7 +99,7 @@ header {
     justify-content: space-between;
     width: 100%;
     background: #6799DB;
-    padding: 0 0 15px 0;
+    /* padding: 0 0 15px 0; */
     font-family: sans-serif;
     /* height: 10vh; */
 }
@@ -184,6 +184,8 @@ div.content img:nth-child(3) {
 
 div.middle {
     padding: 20px;
+    /* top: 200px; */
+    /* position: relative; */
 }
 
 div.middle .txt {

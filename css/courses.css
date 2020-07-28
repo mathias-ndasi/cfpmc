@@ -22,7 +22,7 @@ nav {
     /* height: 20vh; */
     width: 100%;
     font-family: sans-serif;
-    padding: 0 20px;
+    padding: 0 10px;
     /* border: 1px solid blue; */
 }
 
@@ -76,13 +76,13 @@ header {
     justify-content: space-between;
     width: 100%;
     background: #6799DB;
-    padding: 0 0 15px 0;
+    /* padding: 0 0 15px 0; */
     font-family: sans-serif;
     /* height: 10vh; */
 }
 
 header div.info {
-    padding: 10px;
+    padding: 5px;
     color: white;
     /* border: 1px solid orange; */
 }
@@ -165,21 +165,21 @@ div.slideshowItemsText p {
 }
 
 section {
-    max-width: 9600px;
-    height: 100vh;
+    /* max-width: 9600px; */
+    height: 150vh;
     display: flex;
 }
 
 section .main {
     width: 70%;
-    height: 100vh;
+    /* height: 100vh; */
     background: red;
 }
 
 section .right {
     width: 30%;
-    height: 100%;
-    background: yellow;
+    /* height: 100%; */
+    background: rgb(88, 141, 255);
 }
 
 section .main {
@@ -190,6 +190,27 @@ section .main {
 
 .main .thesubjects {
     display: flex;
+}
+
+.main .thesubjects .one {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: fit-content;
+    background: #eee;
+}
+
+.main .thesubjects .one .image {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main .thesubjects .one .image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .subject {

@@ -51,13 +51,16 @@ nav ul li a {
     text-decoration: none;
 }
 
-a.active,
 a:hover,
 li:hover,
 header div.icons i {
     color: #1b9bff;
     transition: .5s;
     transform: scale(1.2);
+}
+
+a.active {
+    color: #004a83;
 }
 
 .checkbtn {
@@ -81,7 +84,7 @@ header {
     justify-content: space-between;
     width: 100%;
     background: #6799DB;
-    padding: 0 0 15px 0;
+    /* padding: 0 0 15px 0; */
     font-family: sans-serif;
     /* height: 10vh; */
 }
